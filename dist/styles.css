@@ -28,6 +28,35 @@ header > #heading {
     text-align: center;
 }
 
+main > .meme {
+    width: 50%;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main #meme-title {
+    font-size: 1rem;
+    color: var(--clr2);
+    font-weight: 600;
+    background-color: var(--clr3);
+    padding: 0.5rem;
+}
+
+main #meme-author {
+    font-size: 1rem;
+    color: var(--clr2);
+    font-weight: 600;
+    background-color: var(--clr3);
+    padding: 0.5rem;
+}
+
+main #meme-author::before {
+    content: 'Author: ';
+}
+
 main > .next-meme {
     display: flex;
     justify-content: center;
@@ -37,7 +66,7 @@ main > .next-meme {
 main > .next-meme > #next-meme-btn {
     border: none;
     background-color: none;
-    padding: 0.5rem 1.5rem;
+    padding: 0.5em 1.5em;
     font-family: inherit;
     font-size: 1rem;
     color: var(--clr2);
@@ -53,3 +82,50 @@ main > .next-meme > #next-meme-btn:hover {
     color: var(--clr3);
 }
 
+@media (max-width: 950px) {
+    main > .meme {
+        width: 60%;
+        max-width: 600px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 500px) {
+    main > .meme {
+        width: 70%;
+        max-width: 700px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 400px) {
+    main > .meme {
+        width: 100%;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header > #heading {
+        font-size: 1.5rem;
+    }
+
+    main #meme-title {
+        font-size: 0.8rem;
+    }
+
+    main #meme-author {
+        font-size: 0.8rem;
+    }
+
+    main > .next-meme > #next-meme-btn {
+        font-size: 0.8rem;
+    }
+}
