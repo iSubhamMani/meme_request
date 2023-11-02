@@ -28,6 +28,32 @@ header > #heading {
     color: var(--clr2);
 }
 
+header > #meme-navmenu {
+    margin: 1rem 0 1rem 0;
+    padding-bottom: 0.5rem;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+header > #meme-navmenu span {
+    display: inline-block;
+    color: var(--clr2);
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-align: center;
+    margin: 0.5em;
+    border-radius: 2rem;
+    padding: 0.5em 1em;
+    background-color: var(--clr4);
+    transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
+}
+
+header > #meme-navmenu span:hover {
+    cursor: pointer;
+    background-color: var(--clr2);
+    color: var(--clr3);
+}
+
 main > .meme {
     width: 50%;
     max-width: 400px;
@@ -78,7 +104,7 @@ main > .next-meme > #next-meme-btn {
     font-weight: 600;
     background-color: var(--clr3);
     border-radius: 2rem;
-    transition: background-color 150ms ease-in-out, color 300ms ease-in-out;
+    transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
 }
 
 main > .next-meme > #next-meme-btn:hover {
