@@ -104,8 +104,6 @@ main > .next-meme > #next-meme-btn:hover {
 @media (max-width: 400px) {
     main > .meme {
         width: 100%;
-        padding: 1rem;
-        max-width: 300px;
     }
 
     header > #heading {
@@ -122,5 +120,5 @@ main > .next-meme > #next-meme-btn:hover {
 
     main > .next-meme > #next-meme-btn {
         font-size: 0.8rem;
-    }   
+    }
 }
