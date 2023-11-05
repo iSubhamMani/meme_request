@@ -35,7 +35,7 @@ header > #meme-navmenu {
     white-space: nowrap;
 }
 
-header > #meme-navmenu span {
+header > #meme-navmenu .sub_channel {
     display: inline-block;
     color: var(--clr2);
     font-weight: 600;
@@ -48,8 +48,13 @@ header > #meme-navmenu span {
     transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
 }
 
-header > #meme-navmenu span:hover {
+header > #meme-navmenu .sub_channel:hover {
     cursor: pointer;
+    background-color: var(--clr2);
+    color: var(--clr3);
+}
+
+header > #meme-navmenu .sub_channel.active {
     background-color: var(--clr2);
     color: var(--clr3);
 }
@@ -112,6 +117,8 @@ main > .next-meme > #next-meme-btn:hover {
     background-color: var(--clr2);
     color: var(--clr3);
 }
+
+
 
 @media (max-width: 700px) {
     main > .meme {
