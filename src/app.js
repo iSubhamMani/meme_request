@@ -57,7 +57,6 @@ comedyHeaven.addEventListener('click', (e) => {
 nextMeme.addEventListener('click', () => {
     // Fetch a new meme
     loadMeme();
-    console.log(MemeUrl.getMemeUrl());
 });
 
 loadMeme();
