@@ -3,9 +3,8 @@ import fetchNewMeme from "./fetch_meme";
 import Meme from "./models/Meme";
 
 export default async function loadMeme () {
-
     const meme = new Meme(await fetchNewMeme());
-
+    
     //load image
     const data = await loadImage(meme.image_url);
     const scaledImg = loadImage.scale(data.image, {maxWidth:600, maxHeight:400});
