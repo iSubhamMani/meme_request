@@ -86,7 +86,7 @@ main #meme-author {
 
 main #meme-img > img {
     width: 100%;
-    background-size: cover;
+    object-fit: contain;
 }
 
 main #meme-author::before {
@@ -118,23 +118,7 @@ main > .next-meme > #next-meme-btn:hover {
     color: var(--clr3);
 }
 
-
-
-@media (max-width: 700px) {
-    main > .meme {
-        width: 60%;
-        max-width: 700px;
-    }
-}
-
-@media (max-width: 500px) {
-    main > .meme {
-        width: 70%;
-        max-width: 500px;
-    }
-}
-
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     main > .meme {
         width: 100%;
     }
