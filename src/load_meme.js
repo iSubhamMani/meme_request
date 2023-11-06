@@ -7,7 +7,7 @@ export default async function loadMeme () {
     
     //load image
     const data = await loadImage(meme.image_url);
-    const scaledImg = loadImage.scale(data.image, {maxWidth:600, maxHeight:400});
+    const scaledImg = loadImage.scale(data.image, {maxWidth:400, maxHeight:400});
 
     const imageElement = document.getElementById('meme-img');
     imageElement.textContent = "";
