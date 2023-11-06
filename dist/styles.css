@@ -135,10 +135,6 @@ main > .next-meme > #next-meme-btn:hover {
     main #meme-author {
         font-size: 0.8rem;
     }
-
-    main > .next-meme > #next-meme-btn {
-        font-size: 1rem;
-    }
 }
 
 .lds-ellipsis {
